@@ -1,5 +1,5 @@
-Static ClientScript
-===================
+Static ClientScript (multidomain assets)
+========================================
 Extending default Yii [CClientScript](https://github.com/yiisoft/yii/blob/master/framework/web/CClientScript.php) class to use static subdomains for assets files.
 
 Preinstall
