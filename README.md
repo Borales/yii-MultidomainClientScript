@@ -38,6 +38,6 @@ Example for `indexedAssetsSubdomain`=`true` param:
 // will output:
 &lt;head&gt;...&lt;script type=&quot;text/javascript&quot; src=&quot;http://assets0.example.com/js/script.js&quot;&gt;&lt;/script&gt;...&lt;/head&gt;&#10;</pre>
 
-<pre>`Yii::app()->clientScript->registerScriptFile('/js/script.js', CClientScript::POS_END)`
+<pre>Yii::app()->clientScript->registerScriptFile('/js/script.js', CClientScript::POS_END)
 // will output:
-`...&lt;script type=&quot;text/javascript&quot; src=&quot;http://assets2.example.com/js/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;`</pre>
+...&lt;script type=&quot;text/javascript&quot; src=&quot;http://assets2.example.com/js/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;</pre>
