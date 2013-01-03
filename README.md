@@ -1,6 +1,6 @@
-Static ClientScript (multidomain assets)
-========================================
-Extending default Yii [CClientScript](https://github.com/yiisoft/yii/blob/master/framework/web/CClientScript.php) class to use static subdomains for assets files.
+Multidomain ClientScript (assets)
+=================================
+Extending default Yii [CClientScript](https://github.com/yiisoft/yii/blob/master/framework/web/CClientScript.php) class to use multiple subdomains for assets (scripts and stylesheets).
 
 Preinstall
 ----------
@@ -15,8 +15,8 @@ After this, you can enhance `CClientScript` class by making some changes in your
 'components' => array(
    ...
     'clientScript' => array(
-        'class' => 'application.components.StaticClientScript',
-        'enableStaticAssets' => true,
+        'class' => 'application.components.MultidomainClientScript',
+        'enableMultidomainAssets' => true,
         'assetsSubdomain' => 'assets',
         'indexedAssetsSubdomain' => false,
     ),
@@ -26,9 +26,9 @@ After this, you can enhance `CClientScript` class by making some changes in your
 
 Params
 ------
-`enableStaticAssets` - whether to use subdomains for ClientScript assets. Default is `true`
-`assetsSubdomain` - subdomain name (e.g. 'http://assets.example.com'. Default is `'assets'`)
-`indexedAssetsSubdomain` - whether to use indexed subdomains for registered script files basing on their `'position'` param. Default is `false`
+- `enableMultidomainAssets` - whether to use subdomains for ClientScript assets. Default is `true`
+- `assetsSubdomain` - subdomain name (e.g. `http://assets.example.com`). Default is `'assets'`
+- `indexedAssetsSubdomain` - whether to use indexed subdomains for registered script files basing on their `'position'` param. Default is `false`
 
 Examples
 --------
