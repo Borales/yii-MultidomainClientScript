@@ -4,12 +4,12 @@
  *
  * @property string $assetsBaseUrl Use it (Yii::app()->clientScript->assetsBaseUrl) instead of Yii::app()->request->baseUrl
  */ 
-class StaticClientScript extends CClientScript {
+class MultidomainClientScript extends CClientScript {
 
     /**
-     * @var bool Whether the static assets are enabled
+     * @var bool Whether the multidomain assets are enabled
      */
-    public $enableStaticAssets = true;
+    public $enableMultidomainAssets = true;
 
     /**
      * @var string Subdomain name
@@ -27,7 +27,7 @@ class StaticClientScript extends CClientScript {
      */
     public function getAssetsBaseUrl($subDomainIndex="") {
         $baseUrl = Yii::app()->request->baseUrl;
-        if($this->enableStaticAssets===false)
+        if($this->enableMultidomainAssets===false)
             return $baseUrl;
 
         $schema = Yii::app()->request->isSecureConnection?"https://":"http://";
