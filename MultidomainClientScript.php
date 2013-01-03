@@ -3,7 +3,7 @@
  * @author Borales <bordun.alexandr@gmail.com>
  *
  * @property string $assetsBaseUrl Use it (Yii::app()->clientScript->assetsBaseUrl) instead of Yii::app()->request->baseUrl
- */ 
+ */
 class MultidomainClientScript extends CClientScript {
 
     /**
