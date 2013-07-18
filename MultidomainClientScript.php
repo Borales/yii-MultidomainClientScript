@@ -45,7 +45,7 @@ class MultidomainClientScript extends CClientScript {
      */
     public function render(&$output)
     {
-        if($this->enableStaticAssets && $this->hasScripts) {
+        if($this->enableMultidomainAssets && $this->hasScripts) {
             $this->renderCoreScripts();
             $this->coreScripts=null;
             $this->processAssetsUrl();
